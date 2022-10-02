@@ -43,8 +43,10 @@ let styles = ["Джаз", "Блюз"];
 styles.push("Рок-н-рол");
 document.write(`${styles}</br>`);
 
+const midlStyle = Math.floor(styles.length / 2);
 
-styles.splice(parseInt(styles.length / 2), 0, "Класика");
+
+styles.splice(midlStyle, 1, "Класика");
 document.write(`${styles}</br>`);
 
 
